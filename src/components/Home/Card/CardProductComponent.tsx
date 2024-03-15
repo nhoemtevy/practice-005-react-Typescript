@@ -1,10 +1,11 @@
 "use client";
 
 import { Card } from "flowbite-react";
-export const CardProductComponent = (prop: product) => {
+import { Products } from "../HomeComponent";
+export const CardProductComponent = (prop: Products) => {
   return (
     <Card
-      className="max-w-sm h-full object-cover "
+      className="max-w-sm h-full w-full object-cover"
       imgAlt="Apple Watch Series 7 in colors pink, silver, and black"
     >
       <img className="h-1/2" src={prop.image} alt="" />

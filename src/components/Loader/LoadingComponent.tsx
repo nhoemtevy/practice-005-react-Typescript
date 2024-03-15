@@ -1,15 +1,12 @@
+"use client";
 
-'use client';
-
-import { Button, Spinner } from 'flowbite-react';
-
+import { Spinner } from "flowbite-react";
 export default function LoadingComponent() {
   return (
-    <div className="flex flex-row gap-3">
-      <Button color="gray">
-        <Spinner aria-label="Alternate spinner button example" size="sm" />
-        <span className="pl-3">Loading...</span>
-      </Button>
+    <div className="flex flex-wrap gap-2">
+      <div className="text-center">
+        <Spinner aria-label="Center-aligned spinner example" />
+      </div>
     </div>
   );
 }

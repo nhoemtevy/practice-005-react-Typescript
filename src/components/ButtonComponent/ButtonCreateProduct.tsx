@@ -23,7 +23,7 @@ export default function ButtonCreateComponent() {
   };
   return (
     <>
-      <div className="flex flex-wrap gap-2 justify-center">
+      <div className="flex flex-wrap gap-2 justify-center mt-24">
         <Button onClick={() => setOpenModal(true)}>Create New Product</Button>
       </div>
       <Modal dismissible show={openModal} onClose={() => setOpenModal(false)}>
